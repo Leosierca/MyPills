@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agregarMedicamento3">
+
+    <TextView
+        android:id="@+id/txtvp3titulo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
+        android:text="@string/titulop3"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinnn"
+        android:layout_width="350dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinnombremed"
+        app:layout_constraintVertical_bias="0.045">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtinnombremed"
+        android:layout_width="358dp"
+        android:layout_height="47dp"
+        android:hint="Nombre delmedicamento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvp3titulo"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <EditText
+        android:id="@+id/edtxtnn"
+        android:layout_width="337dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="no se que va aqui"
+        android:inputType="textPersonName"
+        android:text="nombre?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinnn"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="553dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
