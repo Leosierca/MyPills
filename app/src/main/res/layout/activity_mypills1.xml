@@ -8,50 +8,37 @@
 
     <TextView
         android:id="@+id/txtvp1titulo"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center"
         android:text="@string/titulop1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:background="@android:color/holo_blue_dark"
-        />
-
-    <ImageView
-        android:id="@+id/imgvp1"
-        android:layout_width="160dp"
-        android:layout_height="159dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtvp1titulo"
-        app:layout_constraintVertical_bias="0.068"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtvpresenta"
-        android:layout_width="354dp"
-        android:layout_height="193dp"
+        android:layout_width="350dp"
+        android:layout_height="237dp"
         android:text="@string/presentacion"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgvp1"
-        app:layout_constraintVertical_bias="0.236" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.154" />
 
     <Button
         android:id="@+id/btncomenzar"
-        android:layout_width="402dp"
+        android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@android:color/darker_gray"
         android:onClick="siguiente"
@@ -63,5 +50,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtvpresenta"
         app:layout_constraintVertical_bias="0.588" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvp1titulo"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/medicamentos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

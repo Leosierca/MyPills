@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">MyPills</string>
-    <string name="presentacion">Es un hecho estab  ecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño.\n\n
-        El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí".\n\n
-        Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto,
-        y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo.</string>
+    <string name="presentacion">Con esta aplicación usted podrá tener control completo sobre la planificación
+        de la toma y aplicación de sus medicamentos formulados por un profesional de la salud. \n \n
+        Este le avisara en qué momento y que dosis ha de tomar sus medicamentos. \n \n
+        Para comenzar solamente toque el botón a continuación e ingrese su información personal,
+        y el o los medicamentos formulados.</string>
     <string name="titulop1">My Pills</string>
     <string name="titulop2">Datos Usuario</string>
     <string name="titulop3">Agregar Medicamento</string>
