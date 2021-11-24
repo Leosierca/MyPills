@@ -52,7 +52,7 @@ public class agregarMedicamento3 extends AppCompatActivity {
 
             ArrayList<String> elementos=new ArrayList<>();
 
-            elementos.add("Elegir");
+            elementos.add("Elegir presentacion");
             elementos.add("Pastillas");
             elementos.add("Capsulas");
             elementos.add("Frasco");
@@ -88,7 +88,7 @@ public class agregarMedicamento3 extends AppCompatActivity {
 
             ArrayList<String> elementos2=new ArrayList<>();
 
-            elementos2.add("Elegir");
+            elementos2.add("Elegir Unidad de medida");
             elementos2.add("gragea");
             elementos2.add("cc");
             elementos2.add("ml");
@@ -123,10 +123,16 @@ public class agregarMedicamento3 extends AppCompatActivity {
         }
 
     //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
-    public void siguiente4(View view){
+    public void siguiente3(View view) {
 
-        Intent siguiente4= new Intent(this,MyPills4.class);
-        startActivity(siguiente4);
+        Intent siguiente3 = new Intent(this, MyPills4.class);
+        startActivity(siguiente3);
+    }
+        public void siguiente3r(View view){
+
+            Intent siguiente3r= new Intent(this,datosUsuario2.class);
+            startActivity(siguiente3r);
+        
     }
     // hasta aqui
 

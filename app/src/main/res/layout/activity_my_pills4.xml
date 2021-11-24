@@ -37,7 +37,7 @@
             android:layout_height="60dp"
             android:gravity="center"
             android:text="Hola...!!!"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
 
@@ -47,6 +47,7 @@
             android:layout_height="200dp"
             android:src="@drawable/boton2"
             tools:src="@drawable/boton2"
+            android:background="@color/black"
             tools:srcCompat="@tools:sample/avatars" />
 
     </LinearLayout>
@@ -69,7 +70,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/lista2"
-            tools:srcCompat="@drawable/lista2" />
+            tools:srcCompat="@drawable/lista2"
+            android:background="@color/black"/>
 
         <Space
             android:layout_width="10dp"
@@ -82,7 +84,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:srcCompat="@drawable/medicamts2"
-            tools:srcCompat="@drawable/medicamts2" />
+            tools:srcCompat="@drawable/medicamts2"
+            android:background="@color/black"/>
 
     </LinearLayout>
 

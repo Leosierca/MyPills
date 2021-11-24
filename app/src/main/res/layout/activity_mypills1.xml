@@ -28,7 +28,7 @@
         android:layout_width="350dp"
         android:layout_height="237dp"
         android:text="@string/presentacion"
-        android:textSize="18sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

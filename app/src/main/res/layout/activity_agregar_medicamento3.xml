@@ -6,6 +6,163 @@
     android:layout_height="match_parent"
     tools:context=".agregarMedicamento3">
 
+    <Button
+        android:id="@+id/btnGuardar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="siguiente3"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtObservaciones"
+        app:layout_constraintVertical_bias="0.189" />
+
+
+    <EditText
+        android:id="@+id/txtAlias"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Alias"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnUnidadMed"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/numCantxtoma"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Cantidad  por toma"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/txtAlias"
+        app:layout_constraintVertical_bias="0.026" />
+
+
+    <EditText
+        android:id="@+id/timeIntervalo"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Intervalo de tiempo en horas"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numCantxtoma"
+        app:layout_constraintVertical_bias="0.028" />
+
+
+    <EditText
+        android:id="@+id/numDias"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Por cuanto tiempo (en dias)"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIntervalo"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/dateFechaIni"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Fecha  inicial"
+        android:inputType="date"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numDias"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/timeHoraIni"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:ems="10"
+        android:hint="Hora inicial"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateFechaIni"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/txtObservaciones"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Observaciones"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeHoraIni"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <ImageButton
+        android:id="@+id/ibtn_regresar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="siguiente3r"
+        android:rotationY="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardar3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <Spinner
+        android:id="@+id/spnPresentacion"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNnMed"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Spinner
+        android:id="@+id/spnUnidadMed"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPresentacion"
+        app:layout_constraintVertical_bias="0.021" />
+
     <TextView
         android:id="@+id/txtvp3titulo"
         android:layout_width="0dp"
@@ -23,176 +180,44 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <!-- TextView
+        android:id="@+id/txtvPrsentacion"
+        android:layout_width="300dp"
+        android:layout_height="30sp"
+        android:text="Presentación"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNnMed"
+        app:layout_constraintVertical_bias="0.023" / -->
+
+
+    <!-- TextView
+        android:id="@+id/txtvUnidmedida"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:text="Unidad de medida"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnPresentacion"
+        app:layout_constraintVertical_bias="0.027" / -->
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/txtNnMed"
         android:layout_width="300dp"
         android:layout_height="30sp"
         android:hint="Nombre delmedicamento"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtvp3titulo"
         app:layout_constraintVertical_bias="0.012" />
-
-    <TextView
-        android:id="@+id/txtvPrsentacion"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:text="Presentación"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNnMed"
-        app:layout_constraintVertical_bias="0.023" />
-
-
-    <Spinner
-        android:id="@+id/spnPresentacion"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtvPrsentacion"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/txtvUnidmedida"
-        android:layout_width="300dp"
-        android:layout_height="20dp"
-        android:text="Unidad de medida"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnPresentacion"
-        app:layout_constraintVertical_bias="0.027" />
-
-
-    <Spinner
-        android:id="@+id/spnUnidadMed"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtvUnidmedida"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/txtAlias"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Alias"
-        android:inputType="textPersonName"
-        android:text=""
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spnUnidadMed"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <EditText
-        android:id="@+id/numCantxtoma"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Cantidad  por toma"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toBottomOf="@+id/txtAlias"
-        app:layout_constraintVertical_bias="0.026" />
-
-    <EditText
-        android:id="@+id/timeIntervalo"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Intervalo de tiempo en horas"
-        android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numCantxtoma"
-        app:layout_constraintVertical_bias="0.028" />
-
-    <EditText
-        android:id="@+id/numDias"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Por cuanto tiempo (en dias)"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeIntervalo"
-        app:layout_constraintVertical_bias="0.058" />
-
-    <EditText
-        android:id="@+id/dateFechaIni"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Fecha  inicial"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numDias"
-        app:layout_constraintVertical_bias="0.027" />
-
-    <EditText
-        android:id="@+id/timeHoraIni"
-        android:layout_width="300dp"
-        android:layout_height="30sp"
-        android:ems="10"
-        android:hint="Hora inicial"
-        android:inputType="time"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateFechaIni"
-        app:layout_constraintVertical_bias="0.044" />
-
-    <EditText
-        android:id="@+id/txtObservaciones"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:ems="10"
-        android:hint="Observaciones"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeHoraIni"
-        app:layout_constraintVertical_bias="0.118" />
-
-
-    <Button
-        android:id="@+id/btnGuardar3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="siguiente4"
-        android:text="Guardar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtObservaciones" />
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

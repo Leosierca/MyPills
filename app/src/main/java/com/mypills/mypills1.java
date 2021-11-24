@@ -27,7 +27,7 @@ public class mypills1 extends AppCompatActivity {
     //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
     public void siguiente(View view){
 
-        Intent siguiente= new Intent(this,agregarMedicamento3.class);
+        Intent siguiente= new Intent(this,datosUsuario2.class);
         startActivity(siguiente);
     }
     // hasta aqui
