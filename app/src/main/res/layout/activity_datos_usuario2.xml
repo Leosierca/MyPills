@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Nombre"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:inputType="textPersonName" />
 
         <EditText
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Edad"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:inputType="number" />
 
         <EditText
@@ -59,9 +59,9 @@
             android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Dreccion"
-            android:textSize="10sp"
-            android:inputType="textPersonName" />
+            android:hint="Direccion"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/et_telefono"
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Teléfono"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:inputType="textPersonName" />
 
         <EditText
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Teléfono Contacto"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:inputType="textPersonName" />
 
         <EditText
@@ -87,15 +87,15 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="RH"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/et_antecedentes"
             android:layout_width="300sp"
-            android:layout_height="200sp"
+            android:layout_height="100sp"
             android:ems="10"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:hint="Describa brevemente antecedentes medicos..."
             android:inputType="textPersonName" />
 
