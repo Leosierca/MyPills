@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyPills">
-        <activity android:name=".Calendario8"></activity>
+        <activity android:name=".MenuAdministrador5"></activity>
+        <activity android:name=".Alerta10" />
+        <activity android:name=".Calendario8" />
         <activity android:name=".datosUsuario2" />
         <activity android:name=".MyPills4" />
         <activity android:name=".agregarMedicamento3" />

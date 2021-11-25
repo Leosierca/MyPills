@@ -17,6 +17,8 @@
     <string name="titulop10">Alerta</string>
     <string name="titulop11">Medicamento</string>
     <string name="titulop12">Modificar Medicamento</string>
+    <string name="Aviso10">Hola Martha \n Tomar Ibuprofeno 800 Mg</string>
+    <string name="Aviso10b">hora 2:00 pm</string>
 
 
 </resources>

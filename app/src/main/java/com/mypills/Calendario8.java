@@ -2,6 +2,7 @@ package com.mypills;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -43,4 +44,15 @@ public class Calendario8 extends AppCompatActivity {
         });
 
     }
+
+    //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
+    public void siguiente8(View view){
+
+        Intent siguiente8= new Intent(this,MenuAdministrador5.class);
+        startActivity(siguiente8);
+    }
+    // hasta aqui
+
+
+
 }
