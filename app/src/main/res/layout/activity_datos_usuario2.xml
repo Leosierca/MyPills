@@ -39,7 +39,7 @@
         <EditText
             android:id="@+id/et_nn"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Nombre"
             android:textSize="15sp"
@@ -48,7 +48,7 @@
         <EditText
             android:id="@+id/etn_edad"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Edad"
             android:textSize="15sp"
@@ -57,7 +57,7 @@
         <EditText
             android:id="@+id/et_direccion"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Direccion"
             android:inputType="textPersonName"
@@ -66,7 +66,7 @@
         <EditText
             android:id="@+id/et_telefono"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Teléfono"
             android:textSize="15sp"
@@ -75,7 +75,7 @@
         <EditText
             android:id="@+id/et_telefonoCont"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="Teléfono Contacto"
             android:textSize="15sp"
@@ -84,7 +84,7 @@
         <EditText
             android:id="@+id/et_rh"
             android:layout_width="300sp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="RH"
             android:textSize="15sp"
@@ -102,7 +102,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_guardar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="siguiente2"
@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:layout_constraintVertical_bias="0.189" />
 
-    <ImageButton
+    <!-- ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -126,5 +126,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.333"
-        app:srcCompat="@android:drawable/ic_media_play" />
+        app:srcCompat="@android:drawable/ic_media_play" / -->
 </androidx.constraintlayout.widget.ConstraintLayout>

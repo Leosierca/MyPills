@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "430158146858",
+    "project_id": "mypills-e79a5",
+    "storage_bucket": "mypills-e79a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430158146858:android:e71056e64107be4f614253",
+        "android_client_info": {
+          "package_name": "com.mypills"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430158146858-theua4k39bve5hb6eu0l1l35hi0s8nnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ1rMx-YzFnQUqEazyQhNRurBJNA1WyWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430158146858-theua4k39bve5hb6eu0l1l35hi0s8nnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
