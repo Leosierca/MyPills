@@ -11,9 +11,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class agregarMedicamento3 extends AppCompatActivity {
 
@@ -28,7 +33,9 @@ public class agregarMedicamento3 extends AppCompatActivity {
     EditText fechaIni;// campo fecha!!!
     EditText horaIni; // campo hora!!!
     EditText Observaciones;
-    Button btnGuardar;
+    Button btnGuardarM;
+
+    FirebaseFirestore mfirestore = FirebaseFirestore.getInstance();
 
 
         @Override
@@ -44,7 +51,17 @@ public class agregarMedicamento3 extends AppCompatActivity {
             fechaIni=findViewById(R.id.dateFechaIni);
             horaIni=findViewById(R.id.timeHoraIni);
             Observaciones=findViewById(R.id.txtObservaciones);
-            btnGuardar=findViewById(R.id.btnGuardar3);
+
+            btnGuardarM=findViewById(R.id.btnGuardar3);
+
+            btnGuardarM.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    guardarM();
+                }
+            });
+
 
            //Spiner tipo de presentacion
 
@@ -55,7 +72,7 @@ public class agregarMedicamento3 extends AppCompatActivity {
             elementos.add("Elegir presentacion");
             elementos.add("Pastillas");
             elementos.add("Capsulas");
-            elementos.add("Frasco");
+            elementos.add("Jarabe");
             elementos.add("Sprite");
             elementos.add("Inyeccion");
             elementos.add("Crema");
@@ -121,6 +138,46 @@ public class agregarMedicamento3 extends AppCompatActivity {
             // hasta acá spiner unidad de medida
 
         }
+
+        private void guardarM(){
+            Map<String, Object> medicamentos = new HashMap<>();
+
+            medicamentos.put("medicamentos", nnmedicamento.getText().toString());
+            medicamentos.put("presentacion", mSpiner.getSelectedItem().toString());
+            medicamentos.put("unidadMedida", mSpiner2.getSelectedItem().toString());
+            medicamentos.put("alias", alias.getText().toString());
+            medicamentos.put("dosis", dosis.getText().toString());
+            medicamentos.put("intervalo", Intervalo.getText().toString());
+            medicamentos.put("dias", dias.getText().toString());
+            medicamentos.put("fechaIni", fechaIni.getText().toString());
+            medicamentos.put("hora", horaIni.getText().toString());
+            medicamentos.put("observaciones", Observaciones.getText().toString());
+            medicamentos.put("estado", "Activo");
+
+            mfirestore.collection("Medicamentos").document(nnmedicamento.getText().toString()).set(medicamentos);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
     public void siguiente3(View view) {

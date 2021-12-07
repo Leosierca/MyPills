@@ -44,8 +44,13 @@ public class datosUsuario2 extends AppCompatActivity {
 
             guardar();
 
+
         }
     });
+
+
+
+
 
     }
 
@@ -63,6 +68,10 @@ public class datosUsuario2 extends AppCompatActivity {
         usuario.put("antecedentes", etAntecedentes.getText().toString());
 
         firestore.collection("Usuario").document(etNombre.getText().toString()).set(usuario);
+
+        Intent siguiente2= new Intent(this,agregarMedicamento3.class);
+        startActivity(siguiente2);
+
     }
 
     /* funcion para eliminar de acuerdo al campo nombre--- va relacionado con un boton eliminar
@@ -80,34 +89,6 @@ public class datosUsuario2 extends AppCompatActivity {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
-    public void siguiente2(View view){
-
-        Intent siguiente2= new Intent(this,agregarMedicamento3.class);
-        startActivity(siguiente2);
-    }
 
    public void siguiente2r(View view){
 
