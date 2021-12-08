@@ -158,27 +158,6 @@ public class agregarMedicamento3 extends AppCompatActivity {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
     public void siguiente3(View view) {
 
