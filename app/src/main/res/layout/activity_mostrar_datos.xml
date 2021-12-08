@@ -9,7 +9,7 @@ android:orientation="vertical"
 tools:context=".MostrarDatosActivity">
 
 <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/rvPersonas"
+    android:id="@+id/rvMedicamentos"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
 

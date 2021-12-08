@@ -1,5 +1,9 @@
 package com.mypills;
 
+//el xml solo tiene un reclicle view
+
+
+
         import androidx.appcompat.app.AppCompatActivity;
         import androidx.recyclerview.widget.LinearLayoutManager;
         import androidx.recyclerview.widget.RecyclerView;
@@ -22,14 +26,14 @@ public class MostrarDatosActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_datos);
-
-        rv= findViewById(R.id.rvPersonas);
-
+//se relaciona el activiti con el recicler view
+        rv= findViewById(R.id.rvMedicamentos);
+//con el recicler V hacemos que se repita el item
         rv.setLayoutManager(new LinearLayoutManager(this));
 
-
+//se trae la coleccion del firestore
         Query query = firestore.collection("Medicamentos");//aqui se puede especificar queri
-
+//hace que el resultado se vaya al reclicler
         FirestoreRecyclerOptions<Medicamento> firestoreRO = new FirestoreRecyclerOptions.Builder<Medicamento>().setQuery(query,Medicamento.class).build();
 
         adapter= new MedicamentoAdapter(firestoreRO);

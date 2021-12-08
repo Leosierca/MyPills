@@ -137,12 +137,28 @@ public class agregarMedicamento3 extends AppCompatActivity {
             });
             // hasta acá spiner unidad de medida
 
+
+
         }
+
+        //funcion limpiar formulario
+
+        private void limpirF(){
+            nnmedicamento.setText("");
+            alias.setText("");
+            dosis.setText("");
+            Intervalo.setText("");
+            dias.setText("");
+            fechaIni.setText("");
+            horaIni.setText("");
+            Observaciones.setText("");
+        }
+
 
         private void guardarM(){
             Map<String, Object> medicamentos = new HashMap<>();
 
-            medicamentos.put("medicamentos", nnmedicamento.getText().toString());
+            medicamentos.put("nombre", nnmedicamento.getText().toString());
             medicamentos.put("presentacion", mSpiner.getSelectedItem().toString());
             medicamentos.put("unidadMedida", mSpiner2.getSelectedItem().toString());
             medicamentos.put("alias", alias.getText().toString());
@@ -155,6 +171,8 @@ public class agregarMedicamento3 extends AppCompatActivity {
             medicamentos.put("estado", "Activo");
 
             mfirestore.collection("Medicamentos").document(nnmedicamento.getText().toString()).set(medicamentos);
+//funcion para limpiar formulario
+            limpirF();
         }
 
 
