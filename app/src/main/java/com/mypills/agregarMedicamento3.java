@@ -187,7 +187,7 @@ public class agregarMedicamento3 extends AppCompatActivity {
     }
         public void siguiente3r(View view){
 
-            Intent siguiente3r= new Intent(this,datosUsuario2.class);
+            Intent siguiente3r= new Intent(this,MyPills4.class);
             startActivity(siguiente3r);
         
     }

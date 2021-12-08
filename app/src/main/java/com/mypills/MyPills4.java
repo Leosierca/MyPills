@@ -26,16 +26,28 @@ public class MyPills4 extends AppCompatActivity {
         lista=findViewById(R.id.imgLista);
         imgagregar=findViewById(R.id.imgAgregar);
 
+        misMedicamentos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                consultar();
+            }
+        });
+
+
+
+
+    }
+    //envia a mostrardatoosactivity.java
+    private void consultar(){
+
+        startActivity(new Intent(MyPills4.this,MostrarDatosActivity.class));
+
     }
 
 
-    //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
-    public void siguiente4(View view){
 
-        Intent siguiente4= new Intent(this,Calendario8.class);
-        startActivity(siguiente4);
-    }
-    // hasta aqui
+
+
 
 
 }
