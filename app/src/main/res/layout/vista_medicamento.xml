@@ -56,54 +56,150 @@
                 android:textColor="@android:color/holo_green_dark"
                 android:textStyle="bold"
                 />
-
-            <TextView
-                android:id="@+id/txvDosis"
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txvDosiss"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="0dp"
                 android:layout_marginTop="0dp"
-                android:text="Dosis"
+                android:text="Tomar : "
                 android:textSize="18sp"
                 android:textColor="@android:color/holo_green_dark"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/txvFrecuencia"
+                <TextView
+                    android:id="@+id/txvDosis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Dosis"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txvFrecuencias"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="0dp"
                 android:layout_marginTop="0dp"
-                android:text="Frecuencia"
+                android:text="Cada "
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txvFrecuencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Frecuencia"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txvFrecuenciass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text=" horas"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txvPeriodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:text="Durante "
                 android:textSize="18sp"
                 android:textColor="@android:color/holo_green_dark"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/txvPeriodo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Periodo"
-                android:textSize="18sp"
-                android:textColor="@android:color/holo_green_dark"
-                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txvPeriodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:text="Periodo"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/txvHora"
+                <TextView
+                    android:id="@+id/txvPeriodoss"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="0dp"
+                    android:text=" dias"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="0dp"
-                android:text="Hora"
-                android:textSize="18sp"
-                android:textColor="@android:color/holo_green_dark"
-                android:textStyle="bold"/>
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txvHoras"
+                    android:layout_width="49dp"
+                    android:layout_height="24dp"
+                    android:text="Hora: "
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txvHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hora"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
 
 
         </LinearLayout>

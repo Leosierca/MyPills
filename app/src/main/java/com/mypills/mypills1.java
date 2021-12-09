@@ -41,7 +41,7 @@ public class mypills1 extends AppCompatActivity {
         } else {
             startActivity(registrousuario);
 }*/
-        Intent siguiente= new Intent(this,datosUsuario2.class);
+        Intent siguiente= new Intent(this,MyPills4.class);
         startActivity(siguiente);
 
         // hasta aqui
