@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 
 public class mypills1 extends AppCompatActivity {
 
@@ -29,21 +31,23 @@ public class mypills1 extends AppCompatActivity {
 
     //Metodo temporal Borrable para visitar pagina3 ejercicio desarrollo
 
-
+    int cantidad = 0;
     public void siguiente(View view) {
-  /*
         Intent registrousuario = new Intent(this, datosUsuario2.class);
         Intent listadomedicamentos = new Intent(this, MyPills4.class);
 
-        int datos = mfirestore.collection("Usuario").get().getResult().size();
-        if (datos > 1) {
-            startActivity(listadomedicamentos);
-        } else {
-            startActivity(registrousuario);
-}*/
-        Intent siguiente= new Intent(this,MyPills4.class);
-        startActivity(siguiente);
+       Object datos= mfirestore.collection("Usuario").get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+           @Override
+           public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+               cantidad= queryDocumentSnapshots.size();
+               if (cantidad >1 ){
+                   startActivity(listadomedicamentos);
+               }
+               else{
+                   startActivity(registrousuario);
+               }
+           }
+       });
 
-        // hasta aqui
-
-    }}
+    }
+}

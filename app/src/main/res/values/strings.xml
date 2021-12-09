@@ -19,6 +19,8 @@
     <string name="titulop12">Modificar Medicamento</string>
     <string name="Aviso10">Hola Martha \n Tomar Ibuprofeno 800 Mg</string>
     <string name="Aviso10b">hora 2:00 pm</string>
+    <string name="botonIngM">INGRESAR MEDICAMENTO</string>
+    <string name="botonIngU">REGISTRARSE</string>
 
 
 </resources>

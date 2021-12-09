@@ -33,6 +33,20 @@ public class MyPills4 extends AppCompatActivity {
             }
         });
 
+        lista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                agregarM();
+            }
+        });
+/*
+        imgagregar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registrarse();
+            }
+        });
+*/
 
 
 
@@ -41,6 +55,20 @@ public class MyPills4 extends AppCompatActivity {
     private void consultar(){
 
         startActivity(new Intent(MyPills4.this,MostrarDatosActivity.class));
+
+    }
+
+    //envia a activity agregarmedicamentos3
+    private void agregarM(){
+
+        startActivity(new Intent(MyPills4.this,agregarMedicamento3.class));
+
+    }
+
+    //envia a activity datosUsuario2
+    private void registrarse(){
+
+        startActivity(new Intent(MyPills4.this,datosUsuario2.class));
 
     }
 
